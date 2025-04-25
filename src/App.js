@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Course from "./components/Course";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppBar>
+        <Toolbar sx={{ fontSize: 30 }}>Card Project</Toolbar>
+      </AppBar>
+      <Container maxWidth="lg">
+        <Grid container spacing={2} sx={{ marginTop: 10 }}>
+          <Grid item xs={12} md={6} lg={3}>
+            <Course
+              image="/images/angular.jpg"
+              title="Angular"
+              description="This is Angular course."
+            />
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <Course
+              image="/images/bootstrap5.png"
+              title="Bootstrap"
+              description="This is Bootstrap course."
+            />
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <Course
+              image="/images/ccsharp.png"
+              title="Csharp"
+              description="This is Csharp course."
+            />
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <Course
+              image="/images/completeweb.jpg"
+              title="Complete Web"
+              description="This is Complete Web course."
+            />
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }
