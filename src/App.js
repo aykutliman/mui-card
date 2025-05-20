@@ -15,28 +15,28 @@ function App() {
         <Grid container spacing={2} sx={{ marginTop: 10 }}>
           <Grid item xs={12} md={6} lg={3}>
             <Course
-              image="/images/angular.jpg"
+              image={process.env.PUBLIC_URL + "/images/angular.jpg"}
               title="Angular"
               description="This is Angular course."
             />
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <Course
-              image="/images/bootstrap5.png"
+              image={process.env.PUBLIC_URL + "/images/bootstrap5.png"}
               title="Bootstrap"
               description="This is Bootstrap course."
             />
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <Course
-              image="/images/ccsharp.png"
+              image={process.env.PUBLIC_URL + "/images/ccsharp.png"}
               title="Csharp"
               description="This is Csharp course."
             />
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <Course
-              image="/images/completeweb.jpg"
+              image={process.env.PUBLIC_URL + "/images/completeweb.jpg"}
               title="Complete Web"
               description="This is Complete Web course."
             />
